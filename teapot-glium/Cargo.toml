@@ -1,0 +1,8 @@
+[package]
+name = "teapot-glium"
+version = "0.1.0"
+authors = ["jpl"]
+edition = "2018"
+
+[dependencies]
+glium = "*"

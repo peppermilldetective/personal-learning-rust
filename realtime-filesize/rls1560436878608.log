@@ -1,0 +1,42 @@
+error: expected identifier, found keyword `fn`
+ --> <racer-file>:3:1
+  |
+3 | fn main() {
+  | ^^ expected identifier, found keyword
+
+error: expected one of `::`, `;`, or `as`, found `main`
+ --> <racer-file>:3:4
+  |
+3 | fn main() {
+  |    ^^^^ expected one of `::`, `;`, or `as` here
+
+error: expected one of `::`, `;`, or `as`, found `fn`
+ --> <racer-file>:3:1
+  |
+1 | use s
+  |      - expected one of `::`, `;`, or `as` here
+2 | 
+3 | fn main() {
+  | ^^ unexpected token
+
+error: expected one of `::`, `;`, or `as`, found `:`
+ --> <racer-file>:1:8
+  |
+1 | use std:
+  |        ^ expected one of `::`, `;`, or `as` here
+
+error: expected one of `::`, `;`, or `as`, found `fn`
+ --> <racer-file>:3:1
+  |
+1 | use s
+  |      - expected one of `::`, `;`, or `as` here
+2 | 
+3 | fn main() {
+  | ^^ unexpected token
+
+error: expected one of `::`, `;`, or `as`, found `:`
+ --> <racer-file>:1:8
+  |
+1 | use std:
+  |        ^ expected one of `::`, `;`, or `as` here
+

@@ -1,0 +1,12 @@
+[package]
+name = "fractal_parallel"
+version = "0.1.0"
+authors = ["Jarrett P. Locke <jarrett.p.locke@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+threadpool = "1.7.1"
+num = "0.2.0"
+num_cpus = "1.10.0"
+image = "0.21.0"

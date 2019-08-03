@@ -1,0 +1,11 @@
+[package]
+name = "sqtoy"
+version = "0.1.0"
+authors = ["jpl"]
+edition = "2018"
+
+[dependencies]
+rand = "*"
+gfx = "0.16"
+gfx_window_glutin = "0.16"
+glutin = "0.8"

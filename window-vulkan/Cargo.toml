@@ -1,0 +1,11 @@
+[package]
+name = "window-vulkan"
+version = "0.1.0"
+authors = ["jpl"]
+edition = "2018"
+
+[dependencies]
+vulkano = "0.11"
+vulkano-shaders = "0.11"
+vulkano-win = "0.11"
+winit = "0.18"

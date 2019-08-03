@@ -1,0 +1,9 @@
+[package]
+name = "vulkanimage"
+version = "0.1.0"
+authors = ["jpl"]
+edition = "2018"
+
+[dependencies]
+vulkano = "0.11"
+image = "0.19"

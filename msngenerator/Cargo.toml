@@ -1,0 +1,7 @@
+[package]
+name = "msngenerator"
+version = "0.1.0"
+authors = ["Jarrett P. Locke <jarrett.p.locke@gmail.com>"]
+edition = "2018"
+
+[dependencies]
