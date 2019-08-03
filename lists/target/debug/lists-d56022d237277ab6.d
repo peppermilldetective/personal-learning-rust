@@ -1,0 +1,1 @@
+C:\FLAMES\work\code\rust\lists\target\debug\lists-d56022d237277ab6.exe: C:\FLAMES\work\code\rust\lists\src\first.rs C:\FLAMES\work\code\rust\lists\src\lib.rs C:\FLAMES\work\code\rust\lists\src\second.rs
