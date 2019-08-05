@@ -49,6 +49,12 @@ impl Drop for List {
    }
 }
 
+impl Default for List {
+   fn default() -> Self {
+      List { head: Link::Empty }
+   }
+}
+
 #[cfg(test)]
 mod test {
    use super::List;
