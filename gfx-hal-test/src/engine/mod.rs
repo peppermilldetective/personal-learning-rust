@@ -1,3 +1,23 @@
+#![cfg_attr(
+   not(any(
+      feature = "vulkan",
+      feature = "dx12",
+      feature = "gl"
+   )),
+   allow(dead_code, unused_extern_crates, unused_imports)
+)]
+
+extern crate winit;
+
+#[cfg(feature = "dx12")]
+extern crate gfx_backend_dx12 as back;
+#[cfg(feature = "gl")]
+extern crate gfx_backend_gl as back;
+#[cfg(feature = "vulkan")]
+extern crate gfx_backend_vulkan as back;
+
+extern crate gfx_hal as hal;
+
 mod winitstate;
 
 use winit::{
@@ -6,6 +26,8 @@ use winit::{
    DeviceEvent,
    dpi::LogicalSize
 };
+
+use winitstate::WinitState;
 
 pub fn create_window(title: &str, width: f64, height: f64) -> WinitState {
    WinitState::new(title, LogicalSize { width, height }).unwrap()

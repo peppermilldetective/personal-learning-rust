@@ -1,10 +1,10 @@
 use winit::{
-   LogiclaSize,
+   dpi::LogicalSize,
    CreationError,
    WindowBuilder,
    EventsLoop,
    Window
-}
+};
 
 #[derive(Debug)]
 pub struct WinitState {
@@ -19,7 +19,7 @@ impl WinitState {
    /// 
    /// ## Failure
    /// It is possible for the function to fail to create a window.
-   pub fn new<T: Into<String>>(title: T, size: LogicalSize) -> Result<Self, winit::CreationError> {
+   pub fn new<T: Into<String>>(title: T, size: LogicalSize) -> Result<Self, CreationError> {
       // build the event loop.
       let mut events_loop = EventsLoop::new();
 
